@@ -1,0 +1,137 @@
+/* BTC PAY BUTTON */
+
+.backdrop {
+  background-image: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.068),
+    rgba(236, 240, 237, 0.205),
+    rgba(255, 255, 255, 0.021)
+  );
+  margin: 0 auto;
+  max-width: 40rem;
+  padding: 2rem 2rem 5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 9px;
+  box-shadow: 2px 8px 4px rgba(102, 102, 102, 0.473);
+  align-self: center;
+}
+
+.btcpay-form {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.btcpay-form--inline {
+  flex-direction: row;
+}
+.btcpay-form--block {
+  flex-direction: column;
+}
+.btcpay-form--inline .submit {
+  margin-left: 15px;
+}
+.btcpay-form--block select {
+  margin-bottom: 10px;
+}
+.btcpay-form .btcpay-custom-container {
+  text-align: center;
+}
+.btcpay-custom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.buttons {
+  display: flex;
+  margin-bottom: 1rem;
+}
+/* .btcpay-form .plus-minus {
+  cursor: pointer;
+  font-size: 25px;
+  line-height: 25px;
+  background: #dfe0e1;
+  height: 30px;
+  width: 45px;
+  border: none;
+  border-radius: 60px;
+  margin: auto 5px;
+  display: inline-flex;
+  justify-content: center;
+} */
+.btcpay-form select {
+  /* -moz-appearance: none;
+  -webkit-appearance: none; */
+  /* appearance: none; */
+  /* color: currentColor; */
+  /* background: transparent; */
+  border: 1px solid;
+  border-radius: 9px;
+  font-family: "Merriweather", serif;
+  /* display: block; */
+  padding: 0.5rem;
+  /* margin-left: auto; */
+  margin-top: 1.15rem;
+  font-size: 1.9rem;
+  cursor: pointer;
+  background-color: rgb(255, 255, 255);
+}
+.btcpay-form select:hover {
+  border-color: rgb(200, 200, 200);
+}
+#btcpay-input-price {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  border: 1px solid;
+  box-shadow: none;
+  text-align: center;
+  font-size: 25px;
+  font-family: "Merriweather", serif;
+  /* margin: auto; */
+  border-radius: 5px;
+  line-height: 35px;
+  background-color: rgb(255, 255, 255);
+  width: 12rem;
+  margin: 2rem auto;
+}
+
+#btcpay-input-price:hover {
+  border-color: rgb(200, 200, 200);
+}
+
+#btcpay-input-price::-webkit-outer-spin-button,
+#btcpay-input-price::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.inputprice {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9px;
+  gap: 1.6rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.btcpay-custom p {
+  margin-left: 0.8rem;
+  color: #000;
+  font-size: 2.6rem;
+  width: 23rem;
+  overflow: hidden;
+}
+
+.submit {
+  margin-top: 2rem;
+}
+
+.submit:hover {
+  opacity: 0.8;
+}
+
+.btcpay-customDark p {
+  color: #fff;
+}

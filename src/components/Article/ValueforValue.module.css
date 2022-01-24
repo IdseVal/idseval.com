@@ -1,0 +1,110 @@
+.box {
+  margin-top: 7.2rem;
+  margin-bottom: 3.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+}
+
+.text1 {
+  font-size: 1.9rem;
+  margin-right: 2rem;
+}
+
+.text {
+  font-size: 1.9rem;
+  margin-right: 2rem;
+}
+
+.text3 {
+  font-size: 1.9rem;
+  margin-left: 1rem;
+  margin-right: 2rem;
+}
+
+.submit {
+  border: none;
+  font-family: "Merriweather", serif;
+  border-radius: 9px;
+  padding: 2rem;
+  font-size: 2rem;
+  width: 23rem;
+  background-color: rgb(13, 134, 34);
+  color: #fff;
+  align-content: center;
+
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.24);
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.submit:hover {
+  background-color: rgb(16, 173, 43);
+  transform: scale(1.012);
+  box-shadow: 0 2.8rem 5rem rgba(0, 0, 0, 0.24);
+
+  color: #fff;
+}
+
+.input {
+  font-family: inherit;
+  width: 10rem;
+  border: none;
+  border-bottom: 2px solid rgb(13, 134, 34);
+  outline: 0;
+  font-size: 1.9rem;
+  color: #000;
+  padding: 1rem 1rem;
+  background: transparent;
+  transition: border-color 0.2s;
+  resize: none;
+}
+
+.inputBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Dark mode */
+
+.boxDark {
+  margin-top: 7.2rem;
+  margin-bottom: 3.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.boxDark .input {
+  font-family: inherit;
+  width: 10rem;
+  border: none;
+  border-bottom: 2px solid rgb(13, 134, 34);
+  outline: 0;
+  font-size: 1.9rem;
+  color: #fff;
+  padding: 1rem 1rem;
+  background: transparent;
+  transition: border-color 0.2s;
+  resize: none;
+}
+
+@media (max-width: 925px) {
+  .box {
+    flex-direction: column;
+    gap: 3.4rem;
+    justify-content: center;
+  }
+
+  .boxDark {
+    flex-direction: column;
+    gap: 3.4rem;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,85 @@
+.main {
+  margin: 0 auto;
+  margin-top: 10.2rem;
+  margin-bottom: 6.4rem;
+  width: 80rem;
+}
+
+.mainheader {
+  text-align: center;
+  font-weight: 700;
+  font-size: 4.8rem;
+
+  padding-top: 7.2rem;
+  padding-bottom: 9.6rem;
+}
+
+.recommendationsGrid {
+  display: grid;
+  grid-template-columns: 1.2fr 2fr;
+  row-gap: 8rem;
+}
+
+.subheader {
+  font-size: 1.8rem;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 1.6rem;
+}
+
+.listLink:link,
+.listLink:visited {
+  font-size: 1.4rem;
+  color: #444;
+}
+
+.listLink:hover,
+.listLink:active {
+  color: #003da5;
+}
+
+.listLinkDark:link,
+.listLinkDark:visited {
+  font-size: 1.4rem;
+  color: #fff;
+}
+
+.listLinkDark:hover,
+.listLinkDark:active {
+  color: #003da5;
+}
+
+@media (max-width: 850px) {
+  .main {
+    width: 90%;
+  }
+
+  .mainheader {
+    font-size: 3.2rem;
+  }
+
+  .recommendationsGrid {
+    grid-template-columns: 1fr;
+    align-items: center;
+    row-gap: 5rem;
+  }
+
+  .subheader {
+    text-align: center;
+  }
+  .list {
+    align-items: center;
+  }
+  .listLink:link,
+  .listLink:visited {
+    font-size: 1.2rem;
+  }
+  .listLinkDark:link,
+  .listLinkDark:visited {
+    font-size: 1.2rem;
+  }
+}

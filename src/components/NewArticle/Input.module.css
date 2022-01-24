@@ -1,0 +1,64 @@
+.input {
+  font-family: inherit;
+  width: 100%;
+  border: 0;
+  outline: 0;
+  font-size: 1.3rem;
+  color: #000;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+  margin-top: 3.2rem;
+  resize: none;
+}
+
+.input:focus::placeholder {
+  color: transparent;
+}
+
+.paragraph {
+  font-size: 1.9rem;
+  font-weight: 300;
+  margin-top: 1.2rem;
+  line-height: 3.2rem;
+  letter-spacing: -0.0258rem;
+  color: #000;
+}
+
+.h1 {
+  margin: 5.2rem 0 4.6rem 0;
+  font-size: 2.8rem;
+  font-weight: 600;
+}
+
+.bold {
+  margin: 1.2rem 0 1.2rem 0;
+  font-size: 1.9rem;
+  font-weight: 600;
+}
+
+.italic {
+  font-size: 1.9rem;
+  font-weight: 400;
+  margin-top: 2.2rem;
+  line-height: 3.2rem;
+  letter-spacing: 0.017rem;
+
+  color: #000;
+  font-style: italic;
+}
+
+.bullet {
+  margin: 2.2rem 0 2.2rem 0;
+  font-size: 1.9rem;
+  font-weight: 400;
+  margin-top: 3.2rem;
+  line-height: 3.2rem;
+  letter-spacing: 0.017rem;
+
+  color: #000;
+  font-style: italic;
+  list-style: circle;
+  display: list-item;
+  list-style: circle;
+}

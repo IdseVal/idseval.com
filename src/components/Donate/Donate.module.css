@@ -1,0 +1,40 @@
+.main {
+  margin: 0 auto;
+  margin-top: 10.2rem;
+  margin-bottom: 6.4rem;
+  width: 80rem;
+}
+
+.mainheader {
+  text-align: center;
+  font-weight: 700;
+  font-size: 4.8rem;
+
+  padding-top: 7.2rem;
+  padding-bottom: 9.6rem;
+}
+
+.text {
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+}
+
+.recommendationsGrid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  column-gap: 4rem;
+}
+
+@media (max-width: 850px) {
+  .main {
+    width: 80%;
+  }
+}
+
+@media (max-width: 637px) {
+  .recommendationsGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 4rem;
+  }
+}

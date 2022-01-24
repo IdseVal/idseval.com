@@ -1,0 +1,187 @@
+.article-container2 {
+  width: 68rem;
+  margin: 0 auto;
+}
+
+.alldark2 {
+  width: 80rem;
+  margin: 0 auto;
+}
+
+/* Normal mode */
+
+.wholearticle {
+  margin-top: 12rem;
+  background-color: rgba(255, 255, 255, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+  padding: 4.8rem 0;
+}
+
+.date {
+  margin: 2.2rem 0 2.2rem 0;
+  font-weight: 600;
+  font-size: 1.7rem;
+}
+
+.imagebox {
+  display: flex;
+  justify-content: center;
+  height: 36rem;
+  overflow: hidden;
+  border-radius: 4.5px;
+  margin-bottom: 6.2rem;
+}
+
+.innerarticleimage {
+  width: 100%;
+
+  margin: -5% 0;
+}
+
+.headerarticle {
+  font-size: 4.2rem;
+  font-weight: 700;
+  line-height: 6.4rem;
+  letter-spacing: -0.13rem;
+  margin-bottom: 3.6rem;
+}
+
+.H1 {
+  margin: 7.2rem 0 4.6rem 0;
+  font-size: 2.8rem;
+  font-weight: 600;
+}
+
+.Bold {
+  margin: 3.2rem 0 1.2rem 0;
+  font-size: 1.9rem;
+  font-weight: 600;
+}
+
+.Paragraph {
+  font-size: 1.9rem;
+  font-weight: 300;
+  margin-top: 3.2rem;
+  line-height: 3.2rem;
+  letter-spacing: -0.0258rem;
+  color: #000;
+}
+
+.Italic {
+  font-size: 1.9rem;
+  font-weight: 400;
+  margin-top: 3.2rem;
+  line-height: 3.2rem;
+  letter-spacing: 0.017rem;
+
+  color: #000;
+  font-style: italic;
+}
+
+.Bullet {
+  margin: 4.2rem 0 4.2rem 0;
+  font-size: 1.9rem;
+  font-weight: 700;
+  margin-top: 3.2rem;
+  line-height: 3.2rem;
+  letter-spacing: 0.017rem;
+
+  color: #000;
+  font-style: italic;
+  list-style: circle;
+  display: list-item;
+  list-style: circle;
+}
+
+.liarticle {
+  font-size: 2.2rem;
+  font-weight: 300;
+  font-style: italic;
+  margin-bottom: 3.2rem;
+}
+
+.innerarticlelink:link,
+.innerarticlelink:visited {
+  color: #444;
+}
+
+.innerarticlelink:hover,
+.innerarticlelink:active {
+  color: #003da5;
+}
+
+/* Dark mode */
+
+.alldark2 .wholearticle {
+  margin-top: 12rem;
+  background-color: rgba(255, 255, 255, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  padding: 4.8rem 0;
+}
+
+.alldark2 .Paragraph {
+  font-size: 1.9rem;
+  font-weight: 300;
+  margin-top: 3.2rem;
+  line-height: 3.2rem;
+  letter-spacing: -0.0258rem;
+
+  color: #fff;
+}
+
+.alldark2 .Bold {
+  margin: 3.2rem 0 1.2rem 0;
+  font-size: 1.9rem;
+  font-weight: 600;
+
+  color: #fff;
+}
+
+.alldark2 .Italic {
+  font-size: 1.9rem;
+  font-weight: 400;
+  margin-top: 3.2rem;
+  line-height: 3.2rem;
+  letter-spacing: 0.017rem;
+
+  color: #fff;
+  font-style: italic;
+}
+
+.alldark2 .Bullet {
+  margin: 4.2rem 0 4.2rem 0;
+  font-size: 1.9rem;
+  font-weight: 400;
+  margin-top: 3.2rem;
+  line-height: 3.2rem;
+  letter-spacing: 0.017rem;
+
+  color: #fff;
+  font-style: italic;
+  list-style: circle;
+  display: list-item;
+  list-style: circle;
+}
+
+.alldark2 .innerarticlelink:link,
+.alldark2 .innerarticlelink:visited {
+  color: rgb(136, 136, 136);
+}
+
+.alldark2 .innerarticlelink:hover,
+.alldark2 .innerarticlelink:active {
+  color: #003da5;
+}
+
+@media (max-width: 750px) {
+  .article-container2 {
+    width: 80%;
+    margin: 0 auto;
+  }
+}

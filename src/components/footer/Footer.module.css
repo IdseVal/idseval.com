@@ -1,0 +1,190 @@
+.footer {
+  background-color: #cfcfcf;
+  border-top: 1px solid #000;
+  width: 100%;
+}
+
+.footerdark {
+  background-color: #292929;
+  width: 100%;
+}
+
+/* LightMode */
+
+.footergrid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.imgandsocials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2.4rem;
+  padding: 3.2rem;
+}
+
+.profilepicturefooter {
+  height: 7.8rem;
+  width: 7.8rem;
+  border-radius: 50%;
+}
+.socialsbox {
+  display: flex;
+  gap: 2.4rem;
+}
+
+.nameidse {
+  font-size: 1.6rem;
+  color: rgb(41, 41, 41);
+}
+
+.socialslogo:link,
+.socialslogo:visited {
+  text-decoration: none;
+  font-size: 4.2rem;
+  color: #fff;
+  border-radius: 9px;
+  padding: 0.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+}
+
+.socialslogo:hover,
+.socialslogo:active {
+  opacity: 0.8;
+}
+
+.twitter {
+  background-color: #1da1f2;
+}
+
+.linkedin {
+  background-color: #0e76a8;
+}
+
+.github {
+  background-color: #000;
+}
+
+.github:hover,
+.github:active {
+  opacity: 0.7;
+}
+
+.footernav {
+  justify-self: end;
+  align-self: center;
+  margin-right: 6.4rem;
+}
+
+.footerlist {
+  list-style: none;
+  display: flex;
+  gap: 6.2rem;
+}
+
+.footerlist li a:link,
+.footerlist li a:visited {
+  text-decoration: none;
+  color: rgb(41, 41, 41);
+  font-size: 1.6rem;
+}
+
+.footerlist li a:hover,
+.footerlist li a:active {
+  color: #003da5;
+}
+
+/* LightMode */
+
+.footerdark .footergrid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.footerdark .imgandsocials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2.4rem;
+  padding: 3.2rem;
+}
+
+.footerdark .profilepicturefooter {
+  height: 7.8rem;
+  width: 7.8rem;
+  border-radius: 50%;
+}
+.footerdark .socialsbox {
+  display: flex;
+  gap: 2.4rem;
+}
+
+.footerdark .nameidse {
+  font-size: 1.6rem;
+  color: #fff;
+}
+
+.footerdark .socialslogo:link,
+.footerdark .socialslogo:visited {
+  text-decoration: none;
+  font-size: 4.2rem;
+  color: #fff;
+  border-radius: 9px;
+  padding: 0.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+}
+
+.footerdark .socialslogo:hover,
+.footerdark .socialslogo:active {
+  opacity: 0.8;
+}
+
+.footerdark .twitter {
+  background-color: #1da1f2;
+}
+
+.footerdark .linkedin {
+  background-color: #0e76a8;
+}
+
+.footerdark .github {
+  background-color: #000;
+}
+
+.footerdark .github:hover,
+.footerdark .github:active {
+  opacity: 0.7;
+}
+
+.footerdark .footernav {
+  justify-self: end;
+  align-self: center;
+  margin-right: 6.4rem;
+}
+
+.footerdark .footerlist {
+  list-style: none;
+  display: flex;
+  gap: 6.2rem;
+}
+
+.footerdark .footerlist li a:link,
+.footerdark .footerlist li a:visited {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.6rem;
+}
+
+.footerdark .footerlist li a:hover,
+.footerdark .footerlist li a:active {
+  color: #003da5;
+}

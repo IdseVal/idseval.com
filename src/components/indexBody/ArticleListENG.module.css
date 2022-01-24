@@ -1,0 +1,66 @@
+.writingsbackground {
+  padding: 2.4rem;
+  border-radius: 9px;
+  background-color: rgba(90, 90, 90, 0.4);
+}
+
+.writingslist {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+  list-style: none;
+}
+
+.writingslist a:link,
+.writingslist a:visited {
+  display: flex;
+  gap: 2.4rem;
+  background-color: rgb(99, 99, 99);
+  padding: 1.2rem;
+  border-radius: 9px;
+  text-decoration: none;
+  transition: all 0.1s;
+}
+
+.writingslist a:hover,
+.writingslist a:active {
+  background-color: rgb(116, 116, 116);
+}
+
+/* DARKMODE */
+
+.writingslistdark {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+  list-style: none;
+}
+
+.writingslistdark a:link,
+.writingslistdark a:visited {
+  display: flex;
+  gap: 2.4rem;
+  background-color: rgb(29, 29, 29);
+  padding: 1.2rem;
+  border-radius: 9px;
+  text-decoration: none;
+  transition: all 0.1s;
+}
+
+.writingslistdark a:hover,
+.writingslistdark a:active {
+  background-color: rgb(37, 37, 37);
+}
+
+.spinner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 950px) {
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+}

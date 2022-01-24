@@ -1,0 +1,82 @@
+.container {
+  width: 110rem;
+  margin: 0 auto;
+}
+
+.main {
+  margin-top: 10.2rem;
+  margin-bottom: 6.4rem;
+}
+
+/* HEADER */
+
+.mainheader {
+  text-align: center;
+  font-weight: 700;
+  font-size: 4.8rem;
+
+  padding-top: 7.2rem;
+  margin-bottom: 4.8rem;
+}
+
+.mainheaderdark {
+  text-align: center;
+  font-weight: 700;
+  font-size: 4.8rem;
+
+  padding-top: 7.2rem;
+  margin-bottom: 4.8rem;
+}
+
+/* FLAG BUTTONS */
+
+.languages {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.4rem;
+}
+
+.emojiflag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+  height: 7.2rem;
+  width: 16.8rem;
+  font-size: 5.6rem;
+
+  cursor: pointer;
+  background-color: rgba(90, 90, 90, 0.4);
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+  overflow: hidden;
+}
+
+.dutchwritings {
+  background-color: rgba(90, 90, 90, 0.66);
+}
+
+.dutchwritings:hover {
+  background-color: rgba(90, 90, 90, 0.6);
+}
+
+.swaplanguages .englishwritings {
+  background-color: rgba(90, 90, 90, 0.66);
+}
+
+.swaplanguages .englishwritings:hover {
+  background-color: rgba(90, 90, 90, 0.6);
+}
+
+.swaplanguages .dutchwritings {
+  background-color: rgba(90, 90, 90, 0.4);
+}
+
+@media (max-width: 1100px) {
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+}

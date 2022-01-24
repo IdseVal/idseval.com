@@ -1,0 +1,32 @@
+.main {
+  margin: 0 auto;
+  margin-top: 10.2rem;
+  margin-bottom: 6.4rem;
+  width: 80rem;
+}
+
+.mainheader {
+  text-align: center;
+  font-weight: 700;
+  font-size: 4.8rem;
+
+  padding-top: 7.2rem;
+  padding-bottom: 9.6rem;
+}
+
+.recommendationsGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 3rem;
+}
+
+.text {
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+}
+
+@media (max-width: 885px) {
+  .main {
+    width: 90%;
+  }
+}
