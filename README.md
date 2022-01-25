@@ -16,7 +16,7 @@ The data flow of an article starts from the writing interface. Here I used React
 
 This was all done by creating an array that represents the article's contents and mapping that to the screen. This array is really at the centre of the writing interface as it is the place where all data is collected, as where all data is mapped from.
 
-When satisfied with the overal look of the article, including the title, an image and some side-data should be filled. When done filling in these field, all the data that's part of the article will be mapped to an object that is consequently submitted to firebase in JSON format. To submit to firebase, a authentication token is required, which only I can access by login in with my email and password at idseval.com/login.
+When satisfied with the overal look of the article, including the title and an image, some side-data should be filled. When done filling in these field, all the data that's part of the article will be mapped to an object that is consequently submitted to firebase in JSON format. To submit to firebase, a authentication token is required, which only I can access by login in with my email and password at idseval.com/login.
 
 The main page of the website gives an overview of all articles that are inside the firebase, when an article is submitted it instantly displays in the article lists. When an article is clicked, idseval.com fetches the corresponding article contents and dynamically maps them to the screen with the desired styling.
 
