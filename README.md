@@ -30,4 +30,6 @@ Furthermore, I think the way in which data is fetched could be better optimized,
 
 I would also like to make the UX of the writing interface feel even more like a text editor by introducing navigation through direction keys and by making it possible to select multiple inputs at the same time.
 
+Lastly, I would like to create a modal that allows me to fetch a login token while I'm writing an article. Right now, the login token times out after 30 minutes. This is overal not that much of a problem since I will use the writing interface not for drafting, only for posting, but it would be nice to allow me to fetch a login token while writing. This would make the application also usable as a drafting application.
+
 Overall I'm very happy with the application currently and it is a working product that I will use to display and monetize my writing.
