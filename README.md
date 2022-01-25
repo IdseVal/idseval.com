@@ -1,70 +1,33 @@
-# Getting Started with Create React App
+# Idseval.com
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Idseval.com is a simple looking website where I showcase my writing.
 
-## Available Scripts
+My intention when creating the website was to create a personal medium-like web-application that had a nice UI to display my readings and a nice UX to dynamically post my writings to a firebase backend.
 
-In the project directory, you can run:
+I think I succeeded at both these objectives: on the reader side of my application, the design of the application, while simple, really reads nicely and looks and feels a lot like medium.com. One objective of mine was to include a simple monetization model. I chose the value 4 value model, where readers can decide whether they would like to pay something for the article. I did this by enabling payments in Bitcoin through a btc-pay-server.
 
-### `npm start`
+On the writing side of my application, which can be accessed through idseval.com/new_article, you'll find a nice writing interface that looks very similar to a posted article. The interface collects an image and all the contents and styles of the dynamically generated inputs and posts them to the firbase backend, where the article data is fetched from once somebody tries to load an article. Overal I am really happy with how it turned out and I look forward to using it in the future.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## How it works.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Idseval.com is a React application. This means it is build up from multiple small components. It makes use of React-Router to handle routing.
 
-### `npm test`
+The data flow of an article starts from the writing interface. Here I used React to dynamically generate inputfields that symbolise paragraphs or headers with multiple styling options. I really put in the effort to make it feel like a text editor, where when you create or delete a paragraph or header, you automatically focus on the intuitive paragraph.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+This was all done by creating an array that represents the article's contents and mapping that to the screen. This array is really at the centre of the writing interface as it is the place where all data is collected, as where all data is mapped from.
 
-### `npm run build`
+When satisfied with the overal look of the article, including the title, an image and some side-data should be filled. When done filling in these field, all the data that's part of the article will be mapped to an object that is consequently submitted to firebase in JSON format. To submit to firebase, a authentication token is required, which only I can access by login in with my email and password at idseval.com/login.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The main page of the website gives an overview of all articles that are inside the firebase, when an article is submitted it instantly displays in the article lists. When an article is clicked, idseval.com fetches the corresponding article contents and dynamically maps them to the screen with the desired styling.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+This is in a nutshell how idseval.com works. Of course a lot of React code went into creating this, but this is the main data flow.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Future upgrades.
 
-### `npm run eject`
+In the future I would like to upgrade this app to Next.js. This is mostly to allow for server side rendering, which would help with SEO.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Furthermore, I think the way in which data is fetched could be better optimized, now every load fetches data again. I think it could help reduce request traffic by handling data fetching once, in stead on every page rendering.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+I would also like to make the UX of the writing interface feel even more like a text editor by introducing navigation through direction keys and by making it possible to select multiple inputs at the same time.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Overall I'm very happy with the application currently and it is a working product that I will use to display and monetize my writing.
